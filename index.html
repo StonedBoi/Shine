@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: black;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 30px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(46, 41, 41);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.button1 {
+    background-color:  black;
+    position: absolute;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 1.5%;
+    left: 5.5%;
+    width: 500px;
+    height: 80px;
+    color: white;
+}
+
+.button2 {
+    background-color:  black;
+    position: absolute;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 2%;
+    left: 50%;
+    width: 180px;
+    height: 70px;
+    color: white;
+}
+
+.button3 {
+    background-color:  black;
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 0.5%;
+    left: 70%;
+    width: 150px;
+    height: 95px;
+    color: white;
+}
+
+.button4 {
+    background-color:  black;
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 2%;
+    left: 89%;
+    width: 110px;
+    height: 70px;
+    color: white;
+}
+
+div.Top {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 1550;
+    height: 100px;
+    border-style: dashed;
+}
+
+</style>
+</head>
+<body>
+
+<div class="Top">
+    <img src="https://i.imgur.com/pbWpjzD.png" width="1550" height="100">
+</div>
+    
+<div class="tab">
+  <button class="button1" onclick="openCity(event, 'Main')">Jochem van der Steen</button>
+  <button class="button2" onclick="openCity(event, 'About')">About me</button>
+  <button class="button3" onclick="openCity(event, 'Work')">My work</button>
+  <button class="button4" onclick="openCity(event, 'Extra')">Extra</button>
+</div>
+
+<div id="Main" class="tabcontent">
+    <style>
+
+        .content {
+            padding: 0px;
+        }
+        
+        .button {
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        
+        body{
+            background-image: url('https://imgur.com/KacMHBw.jpg');
+            font-family: Arial;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        
+        div.MainImage1 {
+            position: absolute;
+            top: 20%;
+            left: 2%;
+            width: 700;
+            height: 900;
+            border-style: double; height: 900px; width: 700px;
+            border-width: 10px;
+            z-index: 1;
+        }
+        
+        div.MainImage2 {
+          position:absolute;
+          top: 115%;
+          left: 80%;
+          border-style: groove; width: 210px; height: 156px;
+          z-index: 1;
+        }
+        
+        div.MainImage3 {
+          position: absolute;
+          top: 15%;
+          right: 0%;
+        }
+        
+        div.MainImageBackground {
+            position: absolute;
+            top: 21%;
+            left: 2.5%;
+            width: 700;
+            height: 900;
+        }
+        
+        div.MainButton1 {
+          position:absolute;
+          top: 115%;
+          left: 50%;
+          width: 150;
+          height: 100;
+          z-index: 2;
+        }
+        
+        div.MainButton2 {
+          position:absolute;
+          top: 115%;
+          left: 65%;
+          width: 150;
+          height: 100;
+          z-index: 2;
+        }
+        
+        div.MainAbsoluteText1 {
+          position: absolute;
+          top: 18%;
+          left: 50%;
+          width: 750px;
+          height: 915px;
+        }
+        
+        .red { color: red; }
+        
+        </style>
+        
+        <body>
+    
+          <div class="MainImage1">
+              <img src="https://i.imgur.com/1wK8rnn.png" width="700" height="900">
+          </div>
+        
+          <div class="MainImageBackground">
+             <img src="https://i.imgur.com/NeJr4LP.gif" width="704" height="904">
+          </div>
+        
+          <div class="MainAbsoluteText1">
+              <p style="font-size: 100px; font-family: serif;">Hello,</p>
+              <div class="content"></div>
+              <p style="font-size: 30px;">My name is Jochem van der Steen.</p>
+              <p style="font-size: 30px;">Currently 16 years old and a first-year student at SintLucas following a course in software development.</p>
+              <p style="font-size: 30px;">This site is just one of the many projects I make at this school, there will be another page to show some other things I have made so far</p>  
+              <p style="font-size: 30px;">If you still have questions after reviewing this site feel free to contact me: <span class="red">(Twitter got hacked)</span></p>
+          </div>
+        
+          <div class="MainButton1">
+              <a href='mailto:j.van.der.steen@sintlucasedu.nl'>
+                <button>
+                  <img src="https://i.imgur.com/AFjnjbQ.png" width="200" height="150">
+                </button>
+              </a>
+          </div>
+        
+          <div class="MainButton2">
+            <a href='https://twitter.com/JochemvanderSt1'>
+              <button>
+                <img src="https://i.imgur.com/r8fybxB.png" width="200" height="150">
+              </button>
+            </a>
+          </div>
+        
+          <div class="MainImage2"> 
+            <img src="https://i.imgur.com/KDR2u5s.png" width="209" height="155">
+          </div>
+        
+          <div class="MainImage3">
+            <img src="https://i.imgur.com/glAzknq.png" width="200" height="200">
+          </div>
+        
+        </body>
+</div>
+
+<div id="About" class="tabcontent">
+
+    <style>
+        div.AboutImage1 {
+        position: absolute;
+        top: 31%;
+        left: 2%;
+        width: 600px;
+        height: 500px;
+        border-style: double; width: 595.5px; height: 496px;
+        border-width: 10px;
+        }
+        
+        div.AboutAbsoluteText1 {
+        position: absolute;
+        top: 25%;
+        left: 45%;
+        width: 750px;
+        height: 700px;
+        }
+    </style>
+
+    <body>
+      
+        <div class="AboutImage1">
+            <img src="https://i.imgur.com/3jAOgI6.jpg" width="600" height="500">
+        </div>
+      
+        <div class="AboutAbsoluteText1">
+            <p style="font-size: 30px;">My name is Jochem van der Steen, born on 8-5-2004 in Boxtel where i lived for about 5 years before my parents divorced and I went with my mother to Dommelen where i currently still live, altough not the same house.</p>
+            <p style="font-size: 30px;">As a child I went to school at Schepelweyen, made a decent amount of friends and then moved on to the Were Di with some of my other friends. Now at the age of 16 I follow a course in software development at SintLucas hoping to eventually get a decent job as a game developer in the future.</p>
+            <p style="font-size: 30px;">At home I live with my mom, step dad, my little brother who is about 1,5 years younger than me and my 2 cats. My brother also wishes to work at SintLucas so he'll be joining me in a year from now.</p>  
+            <p style="font-size: 30px;"></p>
+        </div>
+      
+      </body>
+</div>
+
+<div id="Work" class="tabcontent">
+
+<style>
+
+  div.Introduction {
+    position: absolute;
+    top: 15%;
+    left: 17%;
+}
+
+div.Work1 {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+div.Work2 {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+div.Work3 {
+    position: absolute;
+    top: 30%;
+    left: 70%;
+}
+
+div.Work4 {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+
+div.Work5 {
+    position: absolute;
+    top: 70%;
+    left: 40%;
+}
+
+div.Work6 {
+    position: absolute;
+    top: 70%;
+    left: 70%;
+}
+
+</style>
+
+<body>
+
+  <div class="Introduction">
+    <p style="font-size: 40px;">Here I will show some things I have made so far at school.</p>
+  </div>
+
+  <div class="Work1">
+    <p style="font-size: 20px;">Video map:</p>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/7571Nwk40nQ"></iframe>
+  </div>
+
+  <div class="Work2">
+    <p style="font-size: 20px;">Christ site:</p>
+    <a href='https://stonedboi.github.io/Christ/'>
+        <button>
+          <img src="https://i.imgur.com/SpxReZQ.jpg" width="300" height="200">
+        </button>
+    </a>
+  </div>
+
+  <div class="Work3">
+    <p style="font-size: 20px;">Dice game:</p>
+    <img src="https://i.imgur.com/XyJcqH7.png" width="300" height="200">
+  </div>
+
+  <div class="Work4">
+    <p style="font-size: 20px;">Cringy introduction:</p>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/5owyQryLE-o"></iframe>
+  </div>
+
+  <div class="Work5">
+    <p style="font-size: 20px;">Weird FPS:</p>
+    <img src="https://i.imgur.com/VayfbXC.png" width="300" height="200">
+  </div>
+
+  <div class="Work6">
+    <p style="font-size: 20px;">Cringy audiotour:</p>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/bfNuqqICPX0"></iframe>
+  </div>
+
+</body>
+</div>
+
+<div id="Extra" class="tabcontent">
+    
+  <style>
+    
+  div.Text1 {
+    position: absolute;
+    top: 17%;
+    left: 10%;
+  }
+  
+  div.Text2 {
+    position: absolute;
+    top: 17%;
+    right: 5%;
+  }
+  
+  div.VideoMain {
+    position: absolute;
+    top: 18%;
+    left: 29%;
+  }
+  
+  div.Shelter {
+    position: absolute;
+    top: 100%;
+    left: 29%;
+  }
+  
+  div.Video1 {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+  }
+  
+  div.Video2 {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+  }
+  
+  div.Video3 {
+    position: absolute;
+    top: 90%;
+    left: 5%;
+  }
+  
+  div.Video4 {
+    position: absolute;
+    top: 120%;
+    left: 5%;
+  }
+  
+  div.Video5 {
+    position: absolute;
+    top: 150%;
+    left: 5%;
+  }
+  
+  div.Image1 {
+    position: absolute;
+    top: 32%;
+    right: 5%;
+  }
+  
+  div.Image2 {
+    position: absolute;
+    top: 62%;
+    right: 5%;
+  }
+  
+  div.Image3 {
+    position: absolute;
+    top: 92%;
+    right: 5%;
+  }
+  
+  div.Image4 {
+    position: absolute;
+    top: 122%;
+    right: 5%;
+  }
+  
+  div.Image5 {
+    position: absolute;
+    top: 152%;
+    right: 5%;
+  }
+  
+  </style>
+  
+  <body>
+  
+    <div class="VideoMain">
+      <p style="font-size: 25px; text-align: center;">|Just something to vibe to|</p>
+      <video controls autoplay width="600" height="350">
+        <source src="peace and tranquility.mp4" type="video/mp4">
+      </video>
+    </div>
+  
+    <div class="Video1">
+      <video controls width="300" height="200">
+        <source src="bunny.mp4" type="video/mp4">
+      </video>
+    </div>
+  
+    <div class="Video2">
+      <video controls width="300" height="200">
+        <source src="go home (heli).mp4" type="video/mp4">
+      </video>
+    </div>
+  
+    <div class="Video3">
+      <video controls width="300" height="200">
+        <source src="Bo'om Gear.mp4" type="video/mp4">
+      </video>
+    </div>
+  
+    <div class="Video4">
+      <video controls width="300" height="200">
+        <source src="cheeks.mp4" type="video/mp4">
+      </video>
+    </div>
+  
+    <div class="Video5">
+      <video controls width="300" height="200">
+        <source src="offender.mp4" type="video/mp4">
+      </video>
+    </div>
+  
+    <div class="Image1">
+      <img src="https://i.imgur.com/ZjCFxWA.jpg" width="300" height="175">
+    </div>
+  
+    <div class="Image2">
+      <img src="https://i.imgur.com/Q1q9RIa.png" width="300" height="175">
+    </div>
+  
+    <div class="Image3">
+      <img src="https://i.imgur.com/aNFEeKN.png" width="300" height="175">
+    </div>
+  
+    <div class="Image4">
+      <img src="https://i.imgur.com/9WXxQ55.jpg" width="300" height="175">
+    </div>
+  
+    <div class="Image5">
+      <img src="https://i.imgur.com/t112v1H.jpg" width="300" height="175">
+    </div>
+  
+    <div class="Text1">
+      <p style="font-size: 40px;">|Funnies|</p>
+    </div>
+  
+    <div class="Text2">
+      <p style="font-size: 40px;">|Recommendations|</p>
+    </div>
+  
+    <div class="Shelter">
+      <p style="font-size: 25px; text-align: center; color: white;">|I really love this video|</p>
+      <iframe width="600" height="350" src="https://www.youtube.com/embed/fzQ6gRAEoy0"></iframe>
+    </div>
+
+  </body>
+
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
